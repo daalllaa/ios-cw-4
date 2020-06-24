@@ -15,7 +15,21 @@ import Foundation
 /// 2. track: String
 /// 3. gender: String
 
-//struct ...
+struct Student{
+    var name : String
+    var track : String
+    var gender:String
+    
+    func imageName() -> String {
+        if gender == "boy"{
+            return "boyProfileImage"
+        }
+        else{
+            return "girlProfileImage"
+        }
+    }
+
+}
 
 
 
@@ -44,7 +58,7 @@ import Foundation
 // MARK: 3️⃣ قم بكتابة مصفوفة أسفل هذا السطر تحتوي على ثلاثة طلاب كالتالي:
 /**
  1. name: ريم خالد,  track: iOS,  gender: girl
- 2. name: صالح شهاب,  track: Web,  gender: boy
+ 2. nae: صالح شهاب,  track: Web,  gender: boym
  3. name:محمد علي,  track: Android,  gender: boy
  */
 
@@ -57,6 +71,11 @@ import Foundation
 //        Student(...
 //    ]
 
-
+var students: [Student] =
+    [
+        Student( name: "ريم خالد" track: "iOS" , gender: "girl")
+        Student(name : "صالح شهاب",track: "web",  gender: "boy")
+      Student(name:"محمد علي ",  track: "Android",  gender: "boy")
+    ]
 
 
